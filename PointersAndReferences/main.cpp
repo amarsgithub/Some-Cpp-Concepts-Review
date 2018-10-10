@@ -23,7 +23,6 @@ int main(void)
     cout << "The address of x is:      " << &x << endl; // <- address of x
     cout << "The address of ptrToX is: " << &ptrToX << endl;
 
-
     // Declaring a reference to x:
     int &y = x;
 
