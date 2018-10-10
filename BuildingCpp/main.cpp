@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // <- this guy is a preprocessor directive 
 using namespace std;
 
 // This right here is the function prototype/declaration:
