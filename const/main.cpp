@@ -55,7 +55,7 @@ int main(void)
 
 
     int runningOutOfNames = 15;
-    int * const runningOutOfNamesPointer = &runningOutOfNames;
+    const int *runningOutOfNamesPointer = &runningOutOfNames;
 
     x = 20; // this is totally legal.
     // runningOutOfNamesPointer = &x; // this is not legal.

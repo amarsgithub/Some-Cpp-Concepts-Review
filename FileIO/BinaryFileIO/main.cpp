@@ -8,16 +8,17 @@ void WriteToBinaryFile(People somePerson)
 
     if (file.is_open())
     {
-        file.write((char*)&somePerson.name, sizeof(People));
+        file.write((char*)&somePerson, sizeof(People));
 
     }
 
     file.close();
 }
 
-void ReadFromFile()
+People ReadFromFile()
 {
     People anotherPerson;
+    string name;
     fstream file("person.bin", ios_base::binary | ios_base::in);
 
     if (file.is_open())
@@ -25,6 +26,8 @@ void ReadFromFile()
         file.read((char*)&anotherPerson, sizeof(People));
     }
     file.close();
+
+    return anotherPerson;
 }
 
 
@@ -38,7 +41,8 @@ int main(void)
 
     WriteToBinaryFile(Amar);
 
-    ReadFromFile();
+    People person = ReadFromFile();
+    cout << person.name << endl;
 
     return 0;
 }
