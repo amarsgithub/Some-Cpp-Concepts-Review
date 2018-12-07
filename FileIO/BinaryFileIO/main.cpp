@@ -9,9 +9,7 @@ void WriteToBinaryFile(People somePerson)
     if (file.is_open())
     {
         file.write((char*)&somePerson, sizeof(People));
-
     }
-
     file.close();
 }
 
@@ -29,6 +27,13 @@ People ReadFromFile()
 
     return anotherPerson;
 }
+
+
+file.read(length)
+char *temp = new char[lengthOfName];
+file.read(temp, lengthOfName)
+tempHero.name = temp;
+delete[] temp
 
 
 int main(void)
