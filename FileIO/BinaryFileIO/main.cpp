@@ -29,11 +29,11 @@ People ReadFromFile()
 }
 
 
-file.read(length)
-char *temp = new char[lengthOfName];
-file.read(temp, lengthOfName)
-tempHero.name = temp;
-delete[] temp
+// file.read(length)
+// char *temp = new char[lengthOfName];
+// file.read(temp, lengthOfName)
+// tempHero.name = temp;
+// delete[] temp
 
 
 int main(void)
